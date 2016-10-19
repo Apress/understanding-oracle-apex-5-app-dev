@@ -1,0 +1,1 @@
+select ename, empno from empwhere job <> 'CLERK'order by ename

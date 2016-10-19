@@ -1,0 +1,1 @@
+-- Listing 10-7. Revision of UpdateChanged to Support Insertionbegin  if :EMPNO is null then     insert into EMP (EName, Sal, DeptNo, Offsite)     values (:ENAME, :SAL, :DEPTNO, :OFFSITE);  else     update EMP      set Sal=:SAL, DeptNo=:DEPTNO, Offsite=:OFFSITE     where EmpNo = :EMPNO;  end if;end;

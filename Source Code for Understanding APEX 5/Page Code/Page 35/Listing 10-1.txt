@@ -1,0 +1,1 @@
+-- Listing 10-1. Code for the ExtractValues Processbegin  if :P35_EMPNO = :EMPNO then    :P35_SALARY := :SAL;    :P35_DEPTNO := :DEPTNO;    :P35_OFFSITE := :OFFSITE;    :P35_IS_SELECTED := :APEX$ROW_SELECTOR;    :P35_HAS_CHANGED := 'No';  end if;end;

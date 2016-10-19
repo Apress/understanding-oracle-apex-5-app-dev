@@ -1,0 +1,1 @@
+-- The LOV query for item P39_COLUMN2.select Column_Name as DisplayVal, Column_Name as ResultValfrom User_Tab_Colswhere Table_Name = :P39_TABLE2order by DisplayVal

@@ -1,0 +1,6 @@
+select null as URL, Job, count(*) as EmpCount
+from EMP
+where (:P11_MINSAL is null  or  :P11_MINSAL <= Sal)
+and   (:P11_MAXSAL is null  or  :P11_MAXSAL >= Sal)
+group by Job
+order by EmpCount

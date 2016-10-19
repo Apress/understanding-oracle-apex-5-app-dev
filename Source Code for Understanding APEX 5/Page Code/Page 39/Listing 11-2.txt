@@ -1,0 +1,1 @@
+-- Listing 11-2. Count Process for Version 1 of Figure 11-4declare  v_query varchar2(100);  v_count integer;begin  v_query := 'select count(*) from ' || :P39_TABLE1 ||              ' where ' || :P39_WHERE1;  execute immediate v_query   into v_count; :P39_RESULT1 := 'There are ' || v_count || ' records.';end;

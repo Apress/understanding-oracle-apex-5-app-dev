@@ -1,0 +1,23 @@
+
+Ñ LOV Query for the first single-value list item
+
+select DName, DeptNo
+from DEPT
+order by DName
+
+
+Ñ LOV Query for the second single-value list item
+
+select DeptNo as DisplayVal, DeptNo as ResultVal
+from DEPT
+order by DisplayVal
+
+
+Ñ LOV Query for the third single-value list item
+
+
+select d.DName || ' (' || count(e.EmpNo) || ' employees)' as DisplayVal, 
+       d.DeptNo as ResultVal
+from DEPT d left join EMP e on d.DeptNo = e.DeptNo
+group by d.DeptNo, d.DName
+order by DisplayVal

@@ -1,0 +1,1 @@
+-- Listing 7-6. Source Query for the Salesman Select Listselect EName, EmpNofrom EMPwhere Job = 'SALESMAN'order by EName 

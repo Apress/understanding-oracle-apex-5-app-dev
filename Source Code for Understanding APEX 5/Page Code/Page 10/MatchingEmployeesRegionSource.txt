@@ -1,0 +1,4 @@
+select EmpNo, EName, Job, Sal, DeptNo
+from EMP
+where InStr( ':' || :P10_DEPTNO || ':',    ':' || DeptNo || ':' )  >  0
+order by EName

@@ -1,0 +1,2 @@
+-- Listing 10-5. Code for the UpdateChanged Process
+begin   update EMP  set Sal=:SAL, DeptNo=:DEPTNO, Offsite=:OFFSITE  where EmpNo = :EMPNO;end;

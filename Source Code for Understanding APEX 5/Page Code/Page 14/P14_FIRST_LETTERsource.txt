@@ -1,0 +1,4 @@
+select FirstLetter as DisplayVal, FirstLetter as ResultVal
+from  (select distinct substr(EName, 1, 1) as FirstLetter 
+       from EMP)
+order by DisplayVal

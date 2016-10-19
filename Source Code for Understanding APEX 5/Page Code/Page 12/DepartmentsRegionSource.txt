@@ -1,0 +1,5 @@
+select d.DName,  d.Loc,  count(e.EmpNo) as EmpCount,  d.DeptNo
+from EMP e  right join  DEPT d
+on  e.DeptNo = d.DeptNo 
+group by d.DeptNo, d.DName, d.Loc
+order by DName

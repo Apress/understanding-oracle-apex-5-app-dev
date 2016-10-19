@@ -1,0 +1,1 @@
+:P31_JOB is not null and :P31_DEPTNO is not null

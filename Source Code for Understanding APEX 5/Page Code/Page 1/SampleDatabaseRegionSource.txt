@@ -1,0 +1,18 @@
+<p>
+<b>DEPT</b>(<u>DeptNo</u>, DName, Loc)
+</p><p>
+<table border=0>
+<tr>
+      <td><b>EMP</b>(</td>
+      <td><u>EmpNo</u>, EName, Job, Mgr, HireDate, </td>
+</tr>
+<tr>
+     <td> </td>
+      <td>Sal, Comm, <i>DeptNo</i>, Offsite) </td>
+</tr>
+</table>
+</p>
+<ul>
+<li> The underlined fields DeptNo and EmpNo are keys.
+<li> The italicized field DeptNo is a foreign key of DEPT.
+</ul>

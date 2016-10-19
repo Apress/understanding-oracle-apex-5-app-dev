@@ -1,0 +1,1 @@
+-- Listing 7-13. Revising the Delete Process of Listing 7-2begin    delete from EMP     where EmpNo = :P17_DELETE_EMPNO;    :P17_DELETE_COUNT := SQL%RowCount;end;

@@ -1,0 +1,1 @@
+-- Listing 10-6. Validation Code for the Tabular Form Update Pageselect * from EMPwhere EmpNo = :EMPNOand apex_util.get_hash(apex_t_varchar2(Sal, DeptNo, Offsite)) = :HASHVAL

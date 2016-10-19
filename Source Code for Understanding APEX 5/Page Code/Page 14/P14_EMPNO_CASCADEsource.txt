@@ -1,0 +1,4 @@
+select EName, EmpNo
+from EMP
+where substr(EName, 1, 1) = :P14_FIRST_LETTER
+order by EName

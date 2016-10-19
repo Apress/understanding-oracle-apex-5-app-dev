@@ -1,0 +1,6 @@
+select e.*, 
+     case when e.Sal>2500 then 'red' else 'black' end as SalColor,
+     case when e.Offsite = 'Y' then 'checkgreen.jpg' 
+          else 'checkred.jpg' end as OffsiteImage,
+     extract(year from e.HireDate) as HireYear
+from EMP e

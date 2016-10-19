@@ -1,0 +1,2 @@
+-- Listing 12-10. The Revised Source Query
+select DeptNo, DName, '<b>' || APEX_ESCAPE.HTML(Loc) || '</b>' as Locfrom DEPTorder by DName

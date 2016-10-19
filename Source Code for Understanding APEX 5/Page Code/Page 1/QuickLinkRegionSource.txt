@@ -1,0 +1,7 @@
+<div align=center>
+<a href="f?p=&APP_ID.:3:&APP_SESSION.">
+<img src="&APP_IMAGES.employees.jpg">
+</a><br>
+Employees
+<p> </p>
+</div>

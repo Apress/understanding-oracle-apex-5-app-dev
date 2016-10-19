@@ -1,0 +1,4 @@
+-- Used in chapter 12 to avoid SQL injection attacks.
+
+instr(upper(:P38_WHERE), 'UNION') = 0 and
+instr(upper(:P38_WHERE), 'SELECT') = 0

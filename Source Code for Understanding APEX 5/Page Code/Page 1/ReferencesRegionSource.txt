@@ -1,0 +1,8 @@
+<ul>
+<li><a href="https://docs.oracle.com/cd/E59726_01/doc.50/e39147/toc.htm">
+      APEX Application Builder Guide </a></li>
+<li><a href="http://asktom.oracle.com/pls/apex/f?p=100:1">
+      Ask Tom: An Oracle Help Site </a></li>
+<li><a href="f?p=&APP_ID.:2:&APP_SESSION.">
+      The Region Practice page</a></li>
+</ul> 

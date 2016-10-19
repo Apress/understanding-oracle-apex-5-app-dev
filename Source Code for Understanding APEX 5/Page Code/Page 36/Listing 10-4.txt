@@ -1,0 +1,1 @@
+-- Listing 10-4. Code for the DeleteSelected Processbegin  if :APEX$ROW_SELECTOR = 'X' then      delete from EMP      where EmpNo = :EMPNO;  end if;end;

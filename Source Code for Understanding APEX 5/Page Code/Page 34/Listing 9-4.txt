@@ -1,0 +1,2 @@
+-- Listing 9-4. PL/SQL Code for the InsertRecord Process
+begin    insert into EMP (EName, Job, Sal, DeptNo, Mgr, HireDate, Comm, Offsite)    values (:P31_NAME, :P31_JOB, :P31_SALARY, :P31_DEPTNO, :P32_MANAGER,            :P33_HIREDATE, 0, 'N');end;

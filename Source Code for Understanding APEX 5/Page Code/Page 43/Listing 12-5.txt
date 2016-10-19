@@ -1,0 +1,1 @@
+-- Listing 12-5. PL/SQL Code for the Show Employee Values Reportreturn ' select distinct ' || :P43_COLUMN1 || ' from EMP';

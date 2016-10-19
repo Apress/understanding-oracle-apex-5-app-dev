@@ -1,0 +1,1 @@
+select DeptNo, DName, '<b>' || Loc || '</b>' as Locfrom DEPTorder by DName

@@ -1,0 +1,1 @@
+-- Listing 11-6. Code for the Version 2 Count Processdeclare  v_query varchar2(100);  v_count int;begin  v_query := 'select count(*) from ' || :P39_TABLE2 ||              ' where ' || :P39_COLUMN2 || :P39_OPERATOR2 || ' :1';  execute immediate v_query   into v_count   using :P39_VALUE2;  :P39_RESULT2 := 'There are ' || v_count || ' records.';end;

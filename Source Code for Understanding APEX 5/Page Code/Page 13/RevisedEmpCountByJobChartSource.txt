@@ -1,0 +1,6 @@
+select 'f?p=' || :APP_ID || ':13:' || :APP_SESSION || '::::P13_JOB:' || Job
+          as URL,  
+       Job,  count(*) as EmpCount
+from EMP
+group by Job
+order by EmpCount desc

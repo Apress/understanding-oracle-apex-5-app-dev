@@ -1,0 +1,1 @@
+-- Listing 7-16. PL/SQL Code for the FetchRecord Processbegin    select EName, Job, Sal, DeptNo    into :P19_ENAME, :P19_JOB, :P19_SALARY, :P19_DEPTNO    from EMP    where EmpNo = :P19_EMPNO;end;

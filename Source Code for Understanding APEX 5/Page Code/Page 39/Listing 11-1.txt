@@ -1,0 +1,1 @@
+-- Listing 11-1. Delete Process for Version 1 of Figure 11-4declare  v_cmd varchar2(100);begin  v_cmd := 'delete from ' || :P39_TABLE1 || ' where ' || :P39_WHERE1;  execute immediate v_cmd;  :P39_RESULT1 := SQL%rowcount || ' records were deleted.';end;

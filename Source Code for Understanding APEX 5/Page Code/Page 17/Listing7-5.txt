@@ -1,0 +1,1 @@
+-- Listing 7-5. PL/SQL Code for the Get Info Buttonbegin    select Job, Sal, DeptNo    into :P17_UPDATE_JOB, :P17_UPDATE_SALARY, :P17_UPDATE_DEPT    from EMP    where EmpNo = :P17_UPDATE_EMPNO;end;

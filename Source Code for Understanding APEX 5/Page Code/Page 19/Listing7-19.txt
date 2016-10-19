@@ -1,0 +1,1 @@
+-- Listing 7-19. PL/SQL Code to Find Previous and Next Values, Approach 2begin    select PrevEmp, NextEmp    into :P19_PREV, :P19_NEXT    from (select EmpNo, lag(EmpNo)  over (order by EName) as PrevEmp,                        lead(EmpNo) over (order by EName) as NextEmp          from EMP)    where EmpNo = :P19_EMPNO;end;

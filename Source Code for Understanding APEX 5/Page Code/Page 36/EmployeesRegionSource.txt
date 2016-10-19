@@ -1,0 +1,1 @@
+-- The source query of the tabular form region.select EmpNo, EName, Sal, DeptNo, Offsite,       apex_util.get_hash(apex_t_varchar2(Sal, DeptNo, Offsite)) as HashValfrom EMPorder by EName

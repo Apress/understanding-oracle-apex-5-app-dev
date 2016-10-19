@@ -1,0 +1,1 @@
+-- Listing 10-3. Alternative Code for the ExtractValues Processbegin  if :APEX$ROW_SELECTOR = 'X' then    :P35_SALARY := :SAL;    :P35_DEPTNO := :DEPTNO;    :P35_OFFSITE := :OFFSITE;    :P35_IS_SELECTED := 'X';    :P35_HAS_CHANGED := 'Yes';  end if;end;

@@ -1,0 +1,1 @@
+-- Listing 7-4. PL/SQL Code for the Update Buttonbegin    update EMP    set Job    = :P17_UPDATE_JOB,        Sal    = :P17_UPDATE_SALARY,        DeptNo = :P17_UPDATE_DEPT    where EmpNo = :P17_UPDATE_EMPNO;end;

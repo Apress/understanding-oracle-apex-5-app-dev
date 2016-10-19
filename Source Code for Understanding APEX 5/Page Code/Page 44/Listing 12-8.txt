@@ -1,0 +1,2 @@
+-- Listing 12-8. Escaping Unwanted HTML Input
+begin  update DEPT  set Loc = APEX_ESCAPE.HTML(:P44_LOC)  where DeptNo = :P44_DEPTNO;end;

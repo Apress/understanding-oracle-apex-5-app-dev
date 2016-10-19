@@ -1,0 +1,13 @@
+-- Listing 12-7. A Validation to Guard Against Unwanted HTML Input
+
+declare 
+  v_LocEscaped varchar2(100);
+begin
+  v_LocEscaped := APEX_ESCAPE.HTML(:P44_LOC);
+  if :P44_LOC = v_LocEscaped then
+    return true;
+  else
+    return false;
+  end if;
+end;
+

@@ -1,0 +1,1 @@
+declare  v_table varchar(20)  := :P38_TABLE;  v_cols  varchar(100) := replace(:P38_COLS, ':', ',');  v_where varchar(100) := '';begin  if :P38_WHERE is not null then    v_where := ' where ' || :P38_WHERE;  end if;  return 'select ' || v_cols || ' from ' || v_table || v_where;end;

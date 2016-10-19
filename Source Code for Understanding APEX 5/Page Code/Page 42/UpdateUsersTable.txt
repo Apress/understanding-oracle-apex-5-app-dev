@@ -1,0 +1,1 @@
+declare  v_valuesToHash apex_t_varchar2 :=                              apex_t_varchar2(:APP_USER, :P42_PASSWORD);begin  update USERS  set Password = apex_util.get_hash(v_valuesToHash, null)  where UserName = :APP_USER;end;

@@ -1,0 +1,1 @@
+-- Listing 10-2. Code for the ExtractChanged processbegin  if :P35_EMPNO = :EMPNO then    :P35_HAS_CHANGED := 'Yes';  end if;end;

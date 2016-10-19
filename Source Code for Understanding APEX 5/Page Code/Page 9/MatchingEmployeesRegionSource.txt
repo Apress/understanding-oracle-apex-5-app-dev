@@ -1,0 +1,5 @@
+select EmpNo, EName, Job, Sal, DeptNo
+from EMP
+where (:P9_JOB is null  or  Job = :P9_JOB)
+and   (:P9_DEPTNO is null  or  DeptNo = :P9_DEPTNO)
+order by EName

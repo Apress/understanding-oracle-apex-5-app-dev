@@ -1,0 +1,1 @@
+-- Listing 7-3. PL/SQL Code for the Insert Buttonbegin    insert into EMP (EName, Job, Mgr, Sal, DeptNo, HireDate, Comm, Offsite)    values (:P17_INSERT_ENAME,             :P17_INSERT_JOB,             :P17_INSERT_MANAGER,            :P17_INSERT_SALARY,            :P17_INSERT_DEPT,            current_date,  0,  'N');end;

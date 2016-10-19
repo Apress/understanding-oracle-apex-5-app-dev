@@ -1,0 +1,1 @@
+-- Listing 7-17. Simplified Code for the Previous Button, Approach 1declare    v_prevEmp number(4,0);begin    select max(EmpNo)    into v_prevEmp    from EMP    where EmpNo < :P19_EMPNO;    if v_prevEmp is not null then          :P19_EMPNO := v_prevEmp;    end if;end;

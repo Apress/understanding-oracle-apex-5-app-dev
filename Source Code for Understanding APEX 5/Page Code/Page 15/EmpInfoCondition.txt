@@ -1,0 +1,1 @@
+:P15_CHOICE = 'Employee' or :P15_CHOICE = 'Both'

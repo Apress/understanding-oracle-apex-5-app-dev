@@ -1,0 +1,4 @@
+select null as URL, Job, min(Sal) as MinSal, max(Sal) as MaxSal
+from EMP
+group by Job
+order by MinSal

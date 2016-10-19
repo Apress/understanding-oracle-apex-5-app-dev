@@ -1,0 +1,1 @@
+select *from USERSwhere Username = :APP_USER and IsAdministrator = 'Y'

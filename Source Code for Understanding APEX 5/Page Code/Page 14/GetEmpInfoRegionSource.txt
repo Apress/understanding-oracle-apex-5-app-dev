@@ -1,0 +1,5 @@
+select e.EmpNo,  d.DName,  e.Job,  e.Sal,  d.Loc
+from EMP e join DEPT d
+on    e.DeptNo = d.DeptNo
+where e.EmpNo = :P14_EMPNO
+order by EmpNo

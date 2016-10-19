@@ -1,0 +1,1 @@
+-- Listing 7-22. Code for the Delete Processbegin    -- First, delete the record.    delete from EMP    where EmpNo = :P20_EMPNO;    -- Then return to report mode.    :P20_MODE := 'Report';end; 

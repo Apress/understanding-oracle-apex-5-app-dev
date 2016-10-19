@@ -1,0 +1,1 @@
+-- Listing 12-6. Process Code for the Get Employee Info Regiondeclare  v_query varchar2(100);begin  v_query := ' select ' || :P43_COLUMN2 || ' from EMP where EmpNo = :1';  execute immediate v_query   into  :P43_VALUE2   using :P43_EMPNO2;end;

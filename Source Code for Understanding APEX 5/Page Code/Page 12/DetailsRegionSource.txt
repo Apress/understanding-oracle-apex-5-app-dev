@@ -1,0 +1,4 @@
+select EmpNo, EName, Job, Sal
+from EMP
+where DeptNo = :P12_DEPTNO
+order by EName

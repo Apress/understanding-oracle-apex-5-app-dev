@@ -1,0 +1,1 @@
+-- Listing 11-7. Dynamic SQL code for the employees reportdeclare   v_sort varchar2(20);begin  if :P40_SORTFIELD is null then    v_sort := 'EName';  else    v_sort := :P40_SORTFIELD;  end if;  return 'select EmpNo, EName, Job, Sal, DeptNo ' ||         'from EMP ' ||          'order by ' || v_sort;end;

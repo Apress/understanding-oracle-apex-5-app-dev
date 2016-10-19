@@ -1,0 +1,3 @@
+select EmpNo, EName, Job, Sal, DeptNo
+from EMP
+order by EName

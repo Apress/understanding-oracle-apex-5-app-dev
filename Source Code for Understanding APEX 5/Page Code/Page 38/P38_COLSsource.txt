@@ -1,0 +1,1 @@
+select Column_Name as DisplayVal,        Column_Name as ResultValfrom User_Tab_Colswhere Table_Name = :P38_TABLEorder by DisplayVal

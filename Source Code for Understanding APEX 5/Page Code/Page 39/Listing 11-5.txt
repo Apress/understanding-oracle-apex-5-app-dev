@@ -1,0 +1,1 @@
+-- Listing 11-5. Correct Code for the Version 2 Delete Processdeclare  v_cmd varchar2(100);begin  v_cmd := 'delete from ' || :P39_TABLE2 ||           ' where ' || :P39_COLUMN2 || :P39_OPERATOR2 || ' :1';   execute immediate v_cmd   using :P39_VALUE2;  :P39_RESULT2 := SQL%rowcount || ' records were deleted.';end;

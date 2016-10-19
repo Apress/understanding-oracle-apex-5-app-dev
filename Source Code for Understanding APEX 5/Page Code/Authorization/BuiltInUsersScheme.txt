@@ -1,0 +1,1 @@
+return :APP_USER = 'GUEST' or :APP_USER = 'ADMIN';
